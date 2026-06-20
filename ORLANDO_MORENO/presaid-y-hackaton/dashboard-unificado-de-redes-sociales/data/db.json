@@ -1,0 +1,555 @@
+{
+  "config": {
+    "stagnationThreshold": 0.5,
+    "youtubeApiKey": "AIzaSyCHeGYYuxHTZPY5-p_8XIR9Pck34MsTGuw"
+  },
+  "channels": [
+    {
+      "id": "UC_marca_a",
+      "title": "Marca A (RPSoft)",
+      "customName": "Marca A",
+      "uploadsPlaylistId": "UU_marca_a",
+      "snippet": {
+        "title": "Marca A (RPSoft)",
+        "description": "Canal oficial de la Marca A para el Bootcamp RPSoft",
+        "thumbnails": {
+          "default": {
+            "url": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=100&h=100&fit=crop"
+          }
+        }
+      }
+    },
+    {
+      "id": "UC_bootcamp",
+      "title": "RPSoft Bootcamp",
+      "customName": "RPSoft Academy",
+      "uploadsPlaylistId": "UU_bootcamp",
+      "snippet": {
+        "title": "RPSoft Bootcamp",
+        "description": "Canal educativo del Bootcamp RPSoft de desarrollo de software",
+        "thumbnails": {
+          "default": {
+            "url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=100&h=100&fit=crop"
+          }
+        }
+      }
+    },
+    {
+      "id": "UC_aesthetic",
+      "title": "Design Studio",
+      "customName": "Design Studio Esports",
+      "uploadsPlaylistId": "UU_aesthetic",
+      "snippet": {
+        "title": "Design Studio Esports",
+        "description": "Canal de diseño gráfico y animación para marcas y videojuegos",
+        "thumbnails": {
+          "default": {
+            "url": "https://images.unsplash.com/photo-1542744094-2ab25be78b90?w=100&h=100&fit=crop"
+          }
+        }
+      }
+    },
+    {
+      "id": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "Hablando Huevadas",
+      "customName": "Hablando Huevadas",
+      "uploadsPlaylistId": "UUba1vMvOHWlMddLARS382Zw",
+      "snippet": {
+        "title": "Hablando Huevadas",
+        "description": "Somos un programa de humor impresentable para personas que claramente no nos merece conformado por Jorgito Luna, ser impresentable proviene de los suburbios más oscuros de Lima la gris y altamente educado en el \"Manual del pendejo vol VI\" y Ricardo Mendoza, ser igual de impresentable cuya labor más resaltante fue cargar una sandía y mostrar el ombliguito.\n\nJuntos se ven en la difícil misión de acompañarte durante el día y meterse en tu cerebro mediante audios de reprogramación mental.\n",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/-gizURmGQN-EGi-aT-ZpBcEoWCO_9taSFaa2pZ9jOzNVeidYqMjcRXqRj0Cd42vmWgGnVDa8vA=s88-c-k-c0x00ffffff-no-rj",
+            "width": 88,
+            "height": 88
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/-gizURmGQN-EGi-aT-ZpBcEoWCO_9taSFaa2pZ9jOzNVeidYqMjcRXqRj0Cd42vmWgGnVDa8vA=s240-c-k-c0x00ffffff-no-rj",
+            "width": 240,
+            "height": 240
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/-gizURmGQN-EGi-aT-ZpBcEoWCO_9taSFaa2pZ9jOzNVeidYqMjcRXqRj0Cd42vmWgGnVDa8vA=s800-c-k-c0x00ffffff-no-rj",
+            "width": 800,
+            "height": 800
+          }
+        }
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-01",
+      "subscribers": 5000,
+      "totalViews": 90000,
+      "videoCount": 15
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-02",
+      "subscribers": 5030,
+      "totalViews": 91500,
+      "videoCount": 15
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-03",
+      "subscribers": 5055,
+      "totalViews": 93000,
+      "videoCount": 15
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-04",
+      "subscribers": 5100,
+      "totalViews": 95000,
+      "videoCount": 16
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-05",
+      "subscribers": 5140,
+      "totalViews": 97800,
+      "videoCount": 16
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-06",
+      "subscribers": 5190,
+      "totalViews": 100500,
+      "videoCount": 16
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-07",
+      "subscribers": 5240,
+      "totalViews": 103800,
+      "videoCount": 17
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-08",
+      "subscribers": 5290,
+      "totalViews": 106900,
+      "videoCount": 17
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-09",
+      "subscribers": 5340,
+      "totalViews": 110500,
+      "videoCount": 17
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-10",
+      "subscribers": 5400,
+      "totalViews": 115000,
+      "videoCount": 17
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-01",
+      "subscribers": 1200,
+      "totalViews": 30000,
+      "videoCount": 10
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-02",
+      "subscribers": 1215,
+      "totalViews": 31000,
+      "videoCount": 10
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-03",
+      "subscribers": 1235,
+      "totalViews": 32100,
+      "videoCount": 10
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-04",
+      "subscribers": 1255,
+      "totalViews": 33200,
+      "videoCount": 11
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-05",
+      "subscribers": 1280,
+      "totalViews": 34600,
+      "videoCount": 11
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-06",
+      "subscribers": 1315,
+      "totalViews": 35900,
+      "videoCount": 11
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-07",
+      "subscribers": 1340,
+      "totalViews": 37100,
+      "videoCount": 12
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-08",
+      "subscribers": 1360,
+      "totalViews": 38400,
+      "videoCount": 12
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-09",
+      "subscribers": 1385,
+      "totalViews": 40100,
+      "videoCount": 12
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-10",
+      "subscribers": 1400,
+      "totalViews": 42000,
+      "videoCount": 12
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-01",
+      "subscribers": 8500,
+      "totalViews": 450000,
+      "videoCount": 42
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-02",
+      "subscribers": 8502,
+      "totalViews": 450600,
+      "videoCount": 42
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-03",
+      "subscribers": 8503,
+      "totalViews": 451100,
+      "videoCount": 42
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-04",
+      "subscribers": 8505,
+      "totalViews": 451500,
+      "videoCount": 42
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-05",
+      "subscribers": 8508,
+      "totalViews": 452000,
+      "videoCount": 42
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-06",
+      "subscribers": 8510,
+      "totalViews": 452400,
+      "videoCount": 42
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-07",
+      "subscribers": 8511,
+      "totalViews": 452900,
+      "videoCount": 43
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-08",
+      "subscribers": 8514,
+      "totalViews": 453500,
+      "videoCount": 43
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-09",
+      "subscribers": 8516,
+      "totalViews": 454100,
+      "videoCount": 43
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-10",
+      "subscribers": 8520,
+      "totalViews": 455000,
+      "videoCount": 43
+    },
+    {
+      "channelId": "UC_marca_a",
+      "date": "2026-06-11",
+      "subscribers": 5447,
+      "totalViews": 118189,
+      "videoCount": 17
+    },
+    {
+      "channelId": "UC_bootcamp",
+      "date": "2026-06-11",
+      "subscribers": 1435,
+      "totalViews": 43409,
+      "videoCount": 12
+    },
+    {
+      "channelId": "UC_aesthetic",
+      "date": "2026-06-11",
+      "subscribers": 8523,
+      "totalViews": 455901,
+      "videoCount": 44
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-01",
+      "subscribers": 6950000,
+      "totalViews": 5010000000,
+      "videoCount": 3500
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-02",
+      "subscribers": 6958000,
+      "totalViews": 5020000000,
+      "videoCount": 3505
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-03",
+      "subscribers": 6966000,
+      "totalViews": 5030000000,
+      "videoCount": 3510
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-04",
+      "subscribers": 6974000,
+      "totalViews": 5040000000,
+      "videoCount": 3515
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-05",
+      "subscribers": 6982000,
+      "totalViews": 5050000000,
+      "videoCount": 3520
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-06",
+      "subscribers": 6990000,
+      "totalViews": 5060000000,
+      "videoCount": 3525
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-07",
+      "subscribers": 6998000,
+      "totalViews": 5070000000,
+      "videoCount": 3528
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-08",
+      "subscribers": 7006000,
+      "totalViews": 5080000000,
+      "videoCount": 3530
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-09",
+      "subscribers": 7014000,
+      "totalViews": 5090000000,
+      "videoCount": 3531
+    },
+    {
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "date": "2026-06-10",
+      "subscribers": 7020000,
+      "totalViews": 5093814683,
+      "videoCount": 3531
+    }
+  ],
+  "videos": [
+    {
+      "id": "vid_ref_1",
+      "channelId": "UC_marca_a",
+      "title": "Configuración de campañas reales paso a paso",
+      "publishedAt": "2026-06-02T14:00:00Z",
+      "durationSec": 600,
+      "views": 1129,
+      "likes": 89,
+      "comments": 21
+    },
+    {
+      "id": "vid_ref_2",
+      "channelId": "UC_marca_a",
+      "title": "3 hacks instantáneos de publicidad digital #Shorts",
+      "publishedAt": "2026-06-04T18:30:00Z",
+      "durationSec": 15,
+      "views": 5446,
+      "likes": 451,
+      "comments": 83
+    },
+    {
+      "id": "vid_ref_3",
+      "channelId": "UC_marca_a",
+      "title": "Cómo escalar tu e-commerce de cero a 10K",
+      "publishedAt": "2026-06-07T13:00:00Z",
+      "durationSec": 1200,
+      "views": 3688,
+      "likes": 280,
+      "comments": 59
+    },
+    {
+      "id": "vid_boot_1",
+      "channelId": "UC_bootcamp",
+      "title": "Aprende NestJS en menos de un día",
+      "publishedAt": "2026-06-02T10:00:00Z",
+      "durationSec": 2400,
+      "views": 1427,
+      "likes": 122,
+      "comments": 27
+    },
+    {
+      "id": "vid_boot_2",
+      "channelId": "UC_bootcamp",
+      "title": "Mi primer deploy a producción en Node #Shorts",
+      "publishedAt": "2026-06-05T15:00:00Z",
+      "durationSec": 45,
+      "views": 8832,
+      "likes": 737,
+      "comments": 94
+    },
+    {
+      "id": "vid_boot_3",
+      "channelId": "UC_bootcamp",
+      "title": "Por qué TypeScript salvará tu código",
+      "publishedAt": "2026-06-08T16:00:00Z",
+      "durationSec": 950,
+      "views": 2135,
+      "likes": 179,
+      "comments": 33
+    },
+    {
+      "id": "vid_aes_1",
+      "channelId": "UC_aesthetic",
+      "title": "Tutorial básico de sombreado 2D para UI",
+      "publishedAt": "2026-06-01T08:00:00Z",
+      "durationSec": 1800,
+      "views": 4132,
+      "likes": 330,
+      "comments": 17
+    },
+    {
+      "id": "vid_aes_2",
+      "channelId": "UC_aesthetic",
+      "title": "Diseñando un banner de marca Gaming en 10min #Shorts",
+      "publishedAt": "2026-06-03T12:00:00Z",
+      "durationSec": 59,
+      "views": 12484,
+      "likes": 993,
+      "comments": 58
+    },
+    {
+      "id": "vid_aes_3",
+      "channelId": "UC_aesthetic",
+      "title": "Teoría del color avanzada para entornos oscuros",
+      "publishedAt": "2026-06-06T15:00:00Z",
+      "durationSec": 3200,
+      "views": 2911,
+      "likes": 213,
+      "comments": 27
+    },
+    {
+      "id": "vid_hh_1",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "HH • ¡Y NO SE ACABA MÁS! Especial de Invierno en el Teatro Canout",
+      "publishedAt": "2026-06-02T22:00:00Z",
+      "durationSec": 5400,
+      "views": 1850320,
+      "likes": 125000,
+      "comments": 14200
+    },
+    {
+      "id": "vid_hh_2",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "Cuando el público trolea a Ricardo Mendoza en vivo #Shorts",
+      "publishedAt": "2026-06-05T19:30:00Z",
+      "durationSec": 45,
+      "views": 3240000,
+      "likes": 295000,
+      "comments": 8600
+    },
+    {
+      "id": "vid_hh_3",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "HH • Entrevista exclusiva con un fan del cono norte",
+      "publishedAt": "2026-06-08T23:00:00Z",
+      "durationSec": 3200,
+      "views": 1420000,
+      "likes": 98000,
+      "comments": 5900
+    },
+    {
+      "id": "vid_hh_4",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "HABLANDO HUEVADAS - Duodécima Temporada [CUMPLIMOS SUEÑO A NIÑO MICROBUSERO]",
+      "publishedAt": "2026-06-09T21:00:00Z",
+      "durationSec": 5620,
+      "views": 2450000,
+      "likes": 185000,
+      "comments": 12800
+    },
+    {
+      "id": "vid_hh_5",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "HH • ¡POR UNOS ZAPATOS CON LUCES! Especial de Verano",
+      "publishedAt": "2026-06-07T20:15:00Z",
+      "durationSec": 4900,
+      "views": 1980000,
+      "likes": 140000,
+      "comments": 9300
+    },
+    {
+      "id": "vid_hh_6",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "RICARDO MENDOZA SE ENAMORÓ DE UNA PASAJERA #Shorts",
+      "publishedAt": "2026-06-06T18:00:00Z",
+      "durationSec": 48,
+      "views": 4120000,
+      "likes": 320000,
+      "comments": 15600
+    },
+    {
+      "id": "vid_hh_7",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "HH • JORGE LUNA TIENE HISTORIA CON UN COBRADOR",
+      "publishedAt": "2026-06-04T19:00:00Z",
+      "durationSec": 5150,
+      "views": 2150000,
+      "likes": 158000,
+      "comments": 11200
+    },
+    {
+      "id": "vid_hh_8",
+      "channelId": "UCba1vMvOHWlMddLARS382Zw",
+      "title": "JORGE LUNA TIENE NUEVO AUTO Y RICARDO SE BURLA #Shorts",
+      "publishedAt": "2026-06-03T17:30:00Z",
+      "durationSec": 55,
+      "views": 3890000,
+      "likes": 275000,
+      "comments": 11900
+    }
+  ]
+}

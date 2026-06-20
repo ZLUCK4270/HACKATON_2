@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Build output
+dist/
+
+# TypeScript cache
+tsconfig.tsbuildinfo
+
+# SQLite database
+db.sqlite
+db.sqlite-journal
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
