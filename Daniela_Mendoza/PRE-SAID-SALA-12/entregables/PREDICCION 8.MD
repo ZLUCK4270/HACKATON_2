@@ -1,0 +1,2 @@
+Al cambiar de SQLite a PostgreSQL, ¿qué archivos modificará la IA? ¿Solo la configuración o también las entidades? ¿Necesitará cambiar algo en los DTOs o servicios?
+La IA probablemente modificará los archivos de configuración de TypeORM y variables de entorno. No debería cambiar entidades, DTOs ni servicios porque la lógica de negocio sigue siendo la misma; solo cambia la conexión a la base de datos.

@@ -1,0 +1,46 @@
+# ── Node modules (todos los niveles) ──
+node_modules/
+**/node_modules/
+
+# ── Build output ──
+dist/
+**/dist/
+.next/
+**/.next/
+.nuxt/
+out/
+
+# ── Logs ──
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Base de datos ──
+*.sqlite
+*.sqlite3
+*.db
+
+# ── Variables de entorno ──
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Turbopack / Next.js cache ──
+.vercel
+.turbo

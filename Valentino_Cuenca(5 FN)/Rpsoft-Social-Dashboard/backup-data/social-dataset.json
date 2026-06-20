@@ -1,0 +1,917 @@
+{
+  "facebook_pages": [
+    {
+      "pageId": "fb-rpsoft-oficial",
+      "name": "RPSoft Oficial",
+      "brand": "RPSoft",
+      "category": "Empresa de software",
+      "thumbnailUrl": "",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "followers": 12400,
+          "likes": 12100,
+          "reach": 45000,
+          "posts": 3,
+          "engagements": 890
+        },
+        {
+          "date": "2026-06-04",
+          "followers": 12450,
+          "likes": 12150,
+          "reach": 47200,
+          "posts": 2,
+          "engagements": 740
+        },
+        {
+          "date": "2026-06-05",
+          "followers": 12480,
+          "likes": 12180,
+          "reach": 50100,
+          "posts": 4,
+          "engagements": 1120
+        },
+        {
+          "date": "2026-06-06",
+          "followers": 12510,
+          "likes": 12210,
+          "reach": 38000,
+          "posts": 1,
+          "engagements": 430
+        },
+        {
+          "date": "2026-06-07",
+          "followers": 12550,
+          "likes": 12250,
+          "reach": 41000,
+          "posts": 2,
+          "engagements": 560
+        },
+        {
+          "date": "2026-06-08",
+          "followers": 12590,
+          "likes": 12290,
+          "reach": 52000,
+          "posts": 3,
+          "engagements": 980
+        },
+        {
+          "date": "2026-06-09",
+          "followers": 12630,
+          "likes": 12330,
+          "reach": 48500,
+          "posts": 3,
+          "engagements": 870
+        },
+        {
+          "date": "2026-06-10",
+          "followers": 12680,
+          "likes": 12380,
+          "reach": 55000,
+          "posts": 5,
+          "engagements": 1340
+        },
+        {
+          "date": "2026-06-11",
+          "followers": 12720,
+          "likes": 12420,
+          "reach": 49000,
+          "posts": 2,
+          "engagements": 720
+        },
+        {
+          "date": "2026-06-12",
+          "followers": 12760,
+          "likes": 12460,
+          "reach": 51000,
+          "posts": 3,
+          "engagements": 900
+        }
+      ],
+      "topPosts": [
+        {
+          "postId": "fb-rps-001",
+          "content": "🚀 Lanzamos nuestra nueva plataforma de analytics. ¡El futuro del monitoreo digital!",
+          "publishedAt": "2026-06-10",
+          "likes": 284,
+          "comments": 67,
+          "shares": 42,
+          "reach": 14500
+        },
+        {
+          "postId": "fb-rps-002",
+          "content": "📊 Resultados del hackathon v2 — ¡El equipo lo logró en 3 días!",
+          "publishedAt": "2026-06-08",
+          "likes": 198,
+          "comments": 43,
+          "shares": 31,
+          "reach": 11200
+        },
+        {
+          "postId": "fb-rps-003",
+          "content": "💡 Tip: ¿Sabes cuánto cuesta una llamada a la YouTube API? ¡Spoiler: menos de lo que crees!",
+          "publishedAt": "2026-06-05",
+          "likes": 156,
+          "comments": 29,
+          "shares": 18,
+          "reach": 9800
+        }
+      ]
+    },
+    {
+      "pageId": "fb-bykerof-moto",
+      "name": "Bykerof Moto",
+      "brand": "Bykerof",
+      "category": "Entretenimiento",
+      "thumbnailUrl": "",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "followers": 3800,
+          "likes": 3650,
+          "reach": 12000,
+          "posts": 2,
+          "engagements": 340
+        },
+        {
+          "date": "2026-06-04",
+          "followers": 3820,
+          "likes": 3670,
+          "reach": 13500,
+          "posts": 3,
+          "engagements": 420
+        },
+        {
+          "date": "2026-06-05",
+          "followers": 3835,
+          "likes": 3685,
+          "reach": 11800,
+          "posts": 1,
+          "engagements": 210
+        },
+        {
+          "date": "2026-06-06",
+          "followers": 3840,
+          "likes": 3690,
+          "reach": 10200,
+          "posts": 1,
+          "engagements": 180
+        },
+        {
+          "date": "2026-06-07",
+          "followers": 3852,
+          "likes": 3700,
+          "reach": 14200,
+          "posts": 2,
+          "engagements": 390
+        },
+        {
+          "date": "2026-06-08",
+          "followers": 3865,
+          "likes": 3712,
+          "reach": 15600,
+          "posts": 3,
+          "engagements": 480
+        },
+        {
+          "date": "2026-06-09",
+          "followers": 3878,
+          "likes": 3724,
+          "reach": 13900,
+          "posts": 2,
+          "engagements": 360
+        },
+        {
+          "date": "2026-06-10",
+          "followers": 3895,
+          "likes": 3740,
+          "reach": 18200,
+          "posts": 4,
+          "engagements": 620
+        },
+        {
+          "date": "2026-06-11",
+          "followers": 3910,
+          "likes": 3754,
+          "reach": 16500,
+          "posts": 3,
+          "engagements": 510
+        },
+        {
+          "date": "2026-06-12",
+          "followers": 3928,
+          "likes": 3770,
+          "reach": 17000,
+          "posts": 3,
+          "engagements": 545
+        }
+      ],
+      "topPosts": [
+        {
+          "postId": "fb-byk-001",
+          "content": "🏍️ Nuevo video ya disponible en YouTube: Ruta extrema en los Andes — 4K",
+          "publishedAt": "2026-06-10",
+          "likes": 187,
+          "comments": 54,
+          "shares": 28,
+          "reach": 8900
+        },
+        {
+          "postId": "fb-byk-002",
+          "content": "📸 Fotos del último viaje en moto por Cusco. ¿Quién se anima al próximo?",
+          "publishedAt": "2026-06-08",
+          "likes": 143,
+          "comments": 38,
+          "shares": 19,
+          "reach": 7200
+        }
+      ]
+    },
+    {
+      "pageId": "fb-google-devs-pe",
+      "name": "Google Developers Perú",
+      "brand": "Google",
+      "category": "Comunidad tecnológica",
+      "thumbnailUrl": "",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "followers": 28500,
+          "likes": 27800,
+          "reach": 95000,
+          "posts": 5,
+          "engagements": 2100
+        },
+        {
+          "date": "2026-06-04",
+          "followers": 28620,
+          "likes": 27920,
+          "reach": 88000,
+          "posts": 3,
+          "engagements": 1650
+        },
+        {
+          "date": "2026-06-05",
+          "followers": 28750,
+          "likes": 28040,
+          "reach": 102000,
+          "posts": 6,
+          "engagements": 2400
+        },
+        {
+          "date": "2026-06-06",
+          "followers": 28900,
+          "likes": 28190,
+          "reach": 79000,
+          "posts": 2,
+          "engagements": 980
+        },
+        {
+          "date": "2026-06-07",
+          "followers": 29050,
+          "likes": 28340,
+          "reach": 91000,
+          "posts": 4,
+          "engagements": 1820
+        },
+        {
+          "date": "2026-06-08",
+          "followers": 29200,
+          "likes": 28490,
+          "reach": 115000,
+          "posts": 7,
+          "engagements": 3100
+        },
+        {
+          "date": "2026-06-09",
+          "followers": 29380,
+          "likes": 28670,
+          "reach": 108000,
+          "posts": 5,
+          "engagements": 2700
+        },
+        {
+          "date": "2026-06-10",
+          "followers": 29560,
+          "likes": 28850,
+          "reach": 125000,
+          "posts": 8,
+          "engagements": 3800
+        },
+        {
+          "date": "2026-06-11",
+          "followers": 29720,
+          "likes": 29010,
+          "reach": 112000,
+          "posts": 6,
+          "engagements": 2900
+        },
+        {
+          "date": "2026-06-12",
+          "followers": 29900,
+          "likes": 29190,
+          "reach": 118000,
+          "posts": 6,
+          "engagements": 3100
+        }
+      ],
+      "topPosts": [
+        {
+          "postId": "fb-gdg-001",
+          "content": "🎉 Google I/O 2026 recap — Todo lo que anunciaron y cómo impacta a los devs peruanos",
+          "publishedAt": "2026-06-10",
+          "likes": 892,
+          "comments": 213,
+          "shares": 145,
+          "reach": 42000
+        },
+        {
+          "postId": "fb-gdg-002",
+          "content": "🔥 Flutter 4.0 ya disponible. Probamos las nuevas features en vivo este sábado",
+          "publishedAt": "2026-06-08",
+          "likes": 654,
+          "comments": 178,
+          "shares": 98,
+          "reach": 31500
+        }
+      ]
+    }
+  ],
+  "instagram": [
+    {
+      "accountId": "ig-rpsoft",
+      "username": "@rpsoft.bootcamp",
+      "name": "RPSoft Bootcamp",
+      "brand": "RPSoft",
+      "thumbnailUrl": "",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "followers": 5200,
+          "following": 340,
+          "posts": 89,
+          "avgLikes": 145,
+          "avgComments": 18
+        },
+        {
+          "date": "2026-06-04",
+          "followers": 5240,
+          "following": 342,
+          "posts": 90,
+          "avgLikes": 152,
+          "avgComments": 20
+        },
+        {
+          "date": "2026-06-05",
+          "followers": 5290,
+          "following": 343,
+          "posts": 91,
+          "avgLikes": 168,
+          "avgComments": 22
+        },
+        {
+          "date": "2026-06-06",
+          "followers": 5320,
+          "following": 344,
+          "posts": 91,
+          "avgLikes": 138,
+          "avgComments": 15
+        },
+        {
+          "date": "2026-06-07",
+          "followers": 5360,
+          "following": 344,
+          "posts": 92,
+          "avgLikes": 175,
+          "avgComments": 24
+        },
+        {
+          "date": "2026-06-08",
+          "followers": 5410,
+          "following": 346,
+          "posts": 93,
+          "avgLikes": 198,
+          "avgComments": 28
+        },
+        {
+          "date": "2026-06-09",
+          "followers": 5460,
+          "following": 347,
+          "posts": 94,
+          "avgLikes": 187,
+          "avgComments": 26
+        },
+        {
+          "date": "2026-06-10",
+          "followers": 5520,
+          "following": 348,
+          "posts": 96,
+          "avgLikes": 224,
+          "avgComments": 34
+        },
+        {
+          "date": "2026-06-11",
+          "followers": 5570,
+          "following": 349,
+          "posts": 97,
+          "avgLikes": 210,
+          "avgComments": 30
+        },
+        {
+          "date": "2026-06-12",
+          "followers": 5620,
+          "following": 350,
+          "posts": 98,
+          "avgLikes": 218,
+          "avgComments": 31
+        }
+      ],
+      "topPosts": [
+        {
+          "postId": "ig-rps-001",
+          "type": "reel",
+          "caption": "✨ 72 horas de hackathon. Un dashboard que jala solo. 0 líneas de Excel.",
+          "publishedAt": "2026-06-10",
+          "likes": 312,
+          "comments": 48,
+          "views": 4200,
+          "saves": 89
+        },
+        {
+          "postId": "ig-rps-002",
+          "type": "carousel",
+          "caption": "📊 5 métricas de YouTube que sí importan (y cuál ignorar)",
+          "publishedAt": "2026-06-07",
+          "likes": 245,
+          "comments": 37,
+          "views": 0,
+          "saves": 134
+        },
+        {
+          "postId": "ig-rps-003",
+          "type": "reel",
+          "caption": "🚀 NestJS + YouTube API en 60 segundos. Así jalamos datos reales.",
+          "publishedAt": "2026-06-05",
+          "likes": 289,
+          "comments": 52,
+          "views": 6800,
+          "saves": 112
+        }
+      ]
+    },
+    {
+      "accountId": "ig-bykerof",
+      "username": "@bykerof_oficial",
+      "name": "Bykerof",
+      "brand": "Bykerof",
+      "thumbnailUrl": "",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "followers": 9800,
+          "following": 512,
+          "posts": 245,
+          "avgLikes": 380,
+          "avgComments": 42
+        },
+        {
+          "date": "2026-06-04",
+          "followers": 9850,
+          "following": 513,
+          "posts": 246,
+          "avgLikes": 395,
+          "avgComments": 45
+        },
+        {
+          "date": "2026-06-05",
+          "followers": 9910,
+          "following": 514,
+          "posts": 247,
+          "avgLikes": 420,
+          "avgComments": 51
+        },
+        {
+          "date": "2026-06-06",
+          "followers": 9960,
+          "following": 514,
+          "posts": 247,
+          "avgLikes": 365,
+          "avgComments": 38
+        },
+        {
+          "date": "2026-06-07",
+          "followers": 10020,
+          "following": 515,
+          "posts": 248,
+          "avgLikes": 445,
+          "avgComments": 56
+        },
+        {
+          "date": "2026-06-08",
+          "followers": 10090,
+          "following": 516,
+          "posts": 249,
+          "avgLikes": 478,
+          "avgComments": 62
+        },
+        {
+          "date": "2026-06-09",
+          "followers": 10160,
+          "following": 517,
+          "posts": 250,
+          "avgLikes": 462,
+          "avgComments": 58
+        },
+        {
+          "date": "2026-06-10",
+          "followers": 10240,
+          "following": 518,
+          "posts": 252,
+          "avgLikes": 520,
+          "avgComments": 71
+        },
+        {
+          "date": "2026-06-11",
+          "followers": 10310,
+          "following": 518,
+          "posts": 253,
+          "avgLikes": 498,
+          "avgComments": 65
+        },
+        {
+          "date": "2026-06-12",
+          "followers": 10390,
+          "following": 519,
+          "posts": 254,
+          "avgLikes": 510,
+          "avgComments": 68
+        }
+      ],
+      "topPosts": [
+        {
+          "postId": "ig-byk-001",
+          "type": "reel",
+          "caption": "🏍️ RUTA EXTREMA: Lima → Cusco en moto. Días 1-3. No es para cualquiera 💪",
+          "publishedAt": "2026-06-10",
+          "likes": 1240,
+          "comments": 187,
+          "views": 28500,
+          "saves": 342
+        },
+        {
+          "postId": "ig-byk-002",
+          "type": "reel",
+          "caption": "⚡ El momento en que la moto resbaló a 4200 msnm. (todos bien 🙏)",
+          "publishedAt": "2026-06-07",
+          "likes": 1580,
+          "comments": 264,
+          "views": 45200,
+          "saves": 521
+        },
+        {
+          "postId": "ig-byk-003",
+          "type": "carousel",
+          "caption": "📸 Los 10 paisajes más impresionantes de nuestros 50,000 km en moto",
+          "publishedAt": "2026-06-05",
+          "likes": 987,
+          "comments": 143,
+          "views": 0,
+          "saves": 678
+        }
+      ]
+    },
+    {
+      "accountId": "ig-flutter-pe",
+      "username": "@flutter.peru",
+      "name": "Flutter Perú",
+      "brand": "Google",
+      "thumbnailUrl": "",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "followers": 7100,
+          "following": 220,
+          "posts": 312,
+          "avgLikes": 198,
+          "avgComments": 28
+        },
+        {
+          "date": "2026-06-04",
+          "followers": 7140,
+          "following": 221,
+          "posts": 313,
+          "avgLikes": 205,
+          "avgComments": 30
+        },
+        {
+          "date": "2026-06-05",
+          "followers": 7190,
+          "following": 222,
+          "posts": 314,
+          "avgLikes": 218,
+          "avgComments": 33
+        },
+        {
+          "date": "2026-06-06",
+          "followers": 7220,
+          "following": 222,
+          "posts": 314,
+          "avgLikes": 192,
+          "avgComments": 26
+        },
+        {
+          "date": "2026-06-07",
+          "followers": 7260,
+          "following": 223,
+          "posts": 315,
+          "avgLikes": 224,
+          "avgComments": 35
+        },
+        {
+          "date": "2026-06-08",
+          "followers": 7310,
+          "following": 224,
+          "posts": 316,
+          "avgLikes": 245,
+          "avgComments": 40
+        },
+        {
+          "date": "2026-06-09",
+          "followers": 7360,
+          "following": 225,
+          "posts": 317,
+          "avgLikes": 237,
+          "avgComments": 38
+        },
+        {
+          "date": "2026-06-10",
+          "followers": 7420,
+          "following": 225,
+          "posts": 319,
+          "avgLikes": 268,
+          "avgComments": 45
+        },
+        {
+          "date": "2026-06-11",
+          "followers": 7470,
+          "following": 226,
+          "posts": 320,
+          "avgLikes": 252,
+          "avgComments": 41
+        },
+        {
+          "date": "2026-06-12",
+          "followers": 7530,
+          "following": 226,
+          "posts": 321,
+          "avgLikes": 260,
+          "avgComments": 43
+        }
+      ],
+      "topPosts": [
+        {
+          "postId": "ig-flt-001",
+          "type": "reel",
+          "caption": "🎯 Flutter 4.0 feature que nadie habla: el nuevo rendering engine que lo cambia todo",
+          "publishedAt": "2026-06-10",
+          "likes": 567,
+          "comments": 98,
+          "views": 12400,
+          "saves": 234
+        },
+        {
+          "postId": "ig-flt-002",
+          "type": "carousel",
+          "caption": "⚡ 10 widgets de Flutter que usamos todos los días (y cómo hacerlos mejores)",
+          "publishedAt": "2026-06-08",
+          "likes": 489,
+          "comments": 76,
+          "views": 0,
+          "saves": 312
+        }
+      ]
+    }
+  ],
+  "facebook_groups": [
+    {
+      "groupId": "fbg-rpsoft-devs",
+      "name": "RPSoft Developers Community",
+      "brand": "RPSoft",
+      "type": "privado",
+      "description": "Comunidad privada de desarrolladores del bootcamp RPSoft. Comparte proyectos, dudas y recursos.",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "members": 1240
+        },
+        {
+          "date": "2026-06-04",
+          "members": 1248
+        },
+        {
+          "date": "2026-06-05",
+          "members": 1255
+        },
+        {
+          "date": "2026-06-06",
+          "members": 1261
+        },
+        {
+          "date": "2026-06-07",
+          "members": 1268
+        },
+        {
+          "date": "2026-06-08",
+          "members": 1275
+        },
+        {
+          "date": "2026-06-09",
+          "members": 1283
+        },
+        {
+          "date": "2026-06-10",
+          "members": 1292
+        },
+        {
+          "date": "2026-06-11",
+          "members": 1298
+        },
+        {
+          "date": "2026-06-12",
+          "members": 12
+        }
+      ]
+    },
+    {
+      "groupId": "fbg-motos-peru",
+      "name": "Motos Perú — Comunidad Oficial",
+      "brand": "Bykerof",
+      "type": "público",
+      "description": "La comunidad de motociclistas más grande del Perú. Rutas, tips, eventos y más.",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "members": 45200
+        },
+        {
+          "date": "2026-06-04",
+          "members": 45350
+        },
+        {
+          "date": "2026-06-05",
+          "members": 45510
+        },
+        {
+          "date": "2026-06-06",
+          "members": 45640
+        },
+        {
+          "date": "2026-06-07",
+          "members": 45800
+        },
+        {
+          "date": "2026-06-08",
+          "members": 45980
+        },
+        {
+          "date": "2026-06-09",
+          "members": 46150
+        },
+        {
+          "date": "2026-06-10",
+          "members": 46380
+        },
+        {
+          "date": "2026-06-11",
+          "members": 46520
+        },
+        {
+          "date": "2026-06-12",
+          "members": 12
+        }
+      ]
+    },
+    {
+      "groupId": "fbg-flutter-peru",
+      "name": "Flutter & Dart — Perú",
+      "brand": "Google",
+      "type": "público",
+      "description": "Grupo de desarrolladores Flutter y Dart en Perú. Noticias, proyectos y meetups.",
+      "snapshots": [
+        {
+          "date": "2026-06-03",
+          "members": 8900
+        },
+        {
+          "date": "2026-06-04",
+          "members": 8935
+        },
+        {
+          "date": "2026-06-05",
+          "members": 8970
+        },
+        {
+          "date": "2026-06-06",
+          "members": 9000
+        },
+        {
+          "date": "2026-06-07",
+          "members": 9035
+        },
+        {
+          "date": "2026-06-08",
+          "members": 9075
+        },
+        {
+          "date": "2026-06-09",
+          "members": 9110
+        },
+        {
+          "date": "2026-06-10",
+          "members": 9155
+        },
+        {
+          "date": "2026-06-11",
+          "members": 9190
+        },
+        {
+          "date": "2026-06-12",
+          "members": 41
+        }
+      ]
+    }
+  ],
+  "tiktok": [
+    {
+      "accountId": "tt-bykerof",
+      "username": "@bykerof",
+      "name": "Bykerof",
+      "brand": "Bykerof",
+      "thumbnailUrl": "",
+      "snapshots": [
+        { "date": "2026-06-03", "followers": 18200, "following": 120, "likes": 245000, "videos": 89 },
+        { "date": "2026-06-04", "followers": 18450, "following": 121, "likes": 248000, "videos": 90 },
+        { "date": "2026-06-05", "followers": 18800, "following": 122, "likes": 252000, "videos": 91 },
+        { "date": "2026-06-06", "followers": 19100, "following": 123, "likes": 256000, "videos": 92 },
+        { "date": "2026-06-07", "followers": 19450, "following": 124, "likes": 261000, "videos": 93 },
+        { "date": "2026-06-08", "followers": 19900, "following": 124, "likes": 268000, "videos": 94 },
+        { "date": "2026-06-09", "followers": 20300, "following": 125, "likes": 274000, "videos": 95 },
+        { "date": "2026-06-10", "followers": 20850, "following": 126, "likes": 282000, "videos": 97 },
+        { "date": "2026-06-11", "followers": 21200, "following": 127, "likes": 287000, "videos": 98 },
+        { "date": "2026-06-12", "followers": 21600, "following": 128, "likes": 293000, "videos": 99 }
+      ],
+      "topVideos": [
+        { "videoId": "tt-byk-001", "type": "video", "description": "RUTA EXTREMA Lima → Cusco en moto | Dia 1 POV completo #moto #adventure #peru", "publishedAt": "2026-06-10", "views": 485000, "likes": 38400, "comments": 2100, "shares": 12500, "durationSec": 58 },
+        { "videoId": "tt-byk-002", "type": "video", "description": "Cuando la moto resbaló a 4200 msnm y pensé que era el final 😰 #moto #andes", "publishedAt": "2026-06-07", "views": 1240000, "likes": 124000, "comments": 8900, "shares": 45000, "durationSec": 45 },
+        { "videoId": "tt-byk-003", "type": "video", "description": "Los 10 paisajes más increíbles de 50,000 km en moto por Sudamérica", "publishedAt": "2026-06-05", "views": 320000, "likes": 28900, "comments": 1450, "shares": 8700, "durationSec": 55 }
+      ]
+    },
+    {
+      "accountId": "tt-rpsoft",
+      "username": "@rpsoft.code",
+      "name": "RPSoft Code",
+      "brand": "RPSoft",
+      "thumbnailUrl": "",
+      "snapshots": [
+        { "date": "2026-06-03", "followers": 3200, "following": 45, "likes": 28000, "videos": 34 },
+        { "date": "2026-06-04", "followers": 3280, "following": 45, "likes": 29100, "videos": 35 },
+        { "date": "2026-06-05", "followers": 3380, "following": 46, "likes": 30500, "videos": 36 },
+        { "date": "2026-06-06", "followers": 3450, "following": 46, "likes": 31200, "videos": 36 },
+        { "date": "2026-06-07", "followers": 3540, "following": 47, "likes": 32400, "videos": 37 },
+        { "date": "2026-06-08", "followers": 3640, "following": 47, "likes": 33800, "videos": 38 },
+        { "date": "2026-06-09", "followers": 3720, "following": 48, "likes": 34900, "videos": 39 },
+        { "date": "2026-06-10", "followers": 3830, "following": 48, "likes": 36500, "videos": 40 },
+        { "date": "2026-06-11", "followers": 3910, "following": 49, "likes": 37800, "videos": 41 },
+        { "date": "2026-06-12", "followers": 4010, "following": 49, "likes": 39200, "videos": 42 }
+      ],
+      "topVideos": [
+        { "videoId": "tt-rps-001", "type": "video", "description": "NestJS + YouTube API en 60 segundos — así jalamos datos reales sin quemar cuota #nestjs #api", "publishedAt": "2026-06-10", "views": 87000, "likes": 7200, "comments": 420, "shares": 2100, "durationSec": 58 },
+        { "videoId": "tt-rps-002", "type": "video", "description": "72h de hackathon: construimos un dashboard real desde cero #hackathon #dev", "publishedAt": "2026-06-08", "views": 124000, "likes": 11400, "comments": 680, "shares": 3400, "durationSec": 52 },
+        { "videoId": "tt-rps-003", "type": "video", "description": "5 métricas de YouTube que debes medir (y cómo automatizarlas) #youtube #analytics", "publishedAt": "2026-06-05", "views": 68000, "likes": 5900, "comments": 310, "shares": 1800, "durationSec": 59 }
+      ]
+    },
+    {
+      "accountId": "tt-flutter-pe",
+      "username": "@flutter.peru",
+      "name": "Flutter Perú",
+      "brand": "Google",
+      "thumbnailUrl": "",
+      "snapshots": [
+        { "date": "2026-06-03", "followers": 5800, "following": 88, "likes": 72000, "videos": 56 },
+        { "date": "2026-06-04", "followers": 5920, "following": 89, "likes": 74000, "videos": 57 },
+        { "date": "2026-06-05", "followers": 6050, "following": 89, "likes": 76500, "videos": 58 },
+        { "date": "2026-06-06", "followers": 6160, "following": 90, "likes": 78200, "videos": 58 },
+        { "date": "2026-06-07", "followers": 6290, "following": 90, "likes": 80400, "videos": 59 },
+        { "date": "2026-06-08", "followers": 6440, "following": 91, "likes": 83000, "videos": 60 },
+        { "date": "2026-06-09", "followers": 6580, "following": 92, "likes": 85500, "videos": 61 },
+        { "date": "2026-06-10", "followers": 6740, "following": 92, "likes": 88200, "videos": 63 },
+        { "date": "2026-06-11", "followers": 6870, "following": 93, "likes": 90500, "videos": 64 },
+        { "date": "2026-06-12", "followers": 7010, "following": 93, "likes": 93000, "videos": 65 }
+      ],
+      "topVideos": [
+        { "videoId": "tt-flt-001", "type": "video", "description": "Flutter 4.0: el nuevo rendering engine que nadie explica bien #flutter #dart", "publishedAt": "2026-06-10", "views": 210000, "likes": 19800, "comments": 1240, "shares": 6700, "durationSec": 57 },
+        { "videoId": "tt-flt-002", "type": "video", "description": "Construye una app completa con Flutter en 3 minutos #flutter #mobile", "publishedAt": "2026-06-07", "views": 178000, "likes": 16200, "comments": 980, "shares": 5400, "durationSec": 54 }
+      ]
+    }
+  ]
+}

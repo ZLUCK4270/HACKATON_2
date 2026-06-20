@@ -1,0 +1,35 @@
+R1
+¿Pedido tiene @ManyToOne a Mesa y @ManyToMany a Plato?
+R2
+¿Existe @JoinTable en la relación ManyToMany?
+R3
+¿El DTO pide mesaId (number) y platoIds (number[])?
+R4
+¿El servicio valida que mesaId y platoIds existen ANTES de crear?
+R5
+¿Errores de IDs inexistentes dan 400 (BadRequest) y NO 500?
+R6
+¿El total se calcula sumando precios de platos?
+R7
+¿GET /pedidos retorna pedidos CON mesa y platos cargados (relations)?
+R8
+¿La IA modificó plato.entity.ts o mesa.entity.ts? ¿Era necesario?
+R9
+¿PedidosModule importa PlatosModule y MesasModule?
+R10
+¿PlatosModule y MesasModule exportan TypeOrmModule? (exports: [TypeOrmModule])
+R11
+¿GET /platos y GET /mesas SIGUEN funcionando?
+
+ID	Resultado	Descripción corta
+R1	✅ Sí	Pedido tiene relación ManyToOne con Mesa y ManyToMany con Plato.
+R2	✅ Sí	Usa @JoinTable() para crear la tabla intermedia pedido_platos.
+R3	✅ Sí	El DTO exige mesaId y platoIds con validaciones.
+R4	✅ Sí	Antes de crear, verifica que la mesa y los platos existan.
+R5	✅ Sí	Si algún ID no existe, lanza BadRequestException (HTTP 400).
+R6	✅ Sí	El total se calcula sumando los precios de los platos.
+R7	✅ Sí	GET /pedidos devuelve los pedidos con mesa y platos incluidos.
+R8	✅ Sí	No fue necesario modificar Plato ni Mesa; las relaciones funcionan desde Pedido.
+R9	✅ Sí	PedidosModule importa PlatosModule y MesasModule.
+R10	❌ No	PlatosModule y MesasModule exportan sus servicios, no TypeOrmModule.
+R11	✅ Sí	GET /platos y GET /mesas siguen funcionando correctamente.

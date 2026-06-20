@@ -1,0 +1,62 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Canal {
+  id             Int             @id @default(autoincrement())
+  channelId      String          // ID original de la red social (ej: UCxxxx)
+  platform       String          // "youtube", "facebook", "tiktok"
+  name           String
+  customImageUrl String?
+  snapshots      CanalSnapshot[]
+  videos         Video[]
+
+  @@unique([platform, channelId])
+}
+
+model CanalSnapshot {
+  id                 Int      @id @default(autoincrement())
+  canalId            Int
+  canal              Canal    @relation(fields: [canalId], references: [id], onDelete: Cascade)
+  subscriberCount    Int
+  totalViews         BigInt
+  videoCount         Int
+  engagementPromedio Float?
+  fetchedDate        String   // YYYY-MM-DD
+
+  @@unique([canalId, fetchedDate])
+}
+
+model Video {
+  id              Int             @id @default(autoincrement())
+  canalId         Int
+  canal           Canal           @relation(fields: [canalId], references: [id], onDelete: Cascade)
+  videoId         String          // ID original del video (ej: video123)
+  title           String
+  durationSeconds Int
+  isShort         Boolean
+  publishedDate   String          // YYYY-MM-DD
+  snapshots       VideoSnapshot[]
+
+  @@unique([canalId, videoId])
+}
+
+model VideoSnapshot {
+  id          Int    @id @default(autoincrement())
+  videoId     Int
+  video       Video  @relation(fields: [videoId], references: [id], onDelete: Cascade)
+  views       Int
+  likes       Int
+  comments    Int
+  engagement  Float?
+  fetchedDate String // YYYY-MM-DD
+
+  @@unique([videoId, fetchedDate])
+}

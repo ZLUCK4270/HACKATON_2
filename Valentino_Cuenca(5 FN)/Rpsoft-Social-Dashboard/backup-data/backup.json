@@ -1,0 +1,122 @@
+{
+  "channels": [
+    {
+      "channelId": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "title": "Google Developers",
+      "brand": "Google",
+      "thumbnailUrl": "https://yt3.googleusercontent.com/ytc/example1",
+      "subscribers": 2850000,
+      "totalViews": 285000000,
+      "videoCount": 1850,
+      "videos": [
+        { "videoId": "vid001", "title": "Building AI Apps with Gemini", "publishedAt": "2026-06-01", "durationSec": 480, "views": 45000, "likes": 3200, "comments": 450 },
+        { "videoId": "vid002", "title": "Google I/O 2026 Keynote", "publishedAt": "2026-05-20", "durationSec": 5400, "views": 850000, "likes": 52000, "comments": 8200 },
+        { "videoId": "vid003", "title": "Flutter 4.0 Release", "publishedAt": "2026-06-05", "durationSec": 900, "views": 120000, "likes": 8900, "comments": 1200 },
+        { "videoId": "vid004", "title": "Quick Tips: Android Studio", "publishedAt": "2026-06-08", "durationSec": 55, "views": 35000, "likes": 2100, "comments": 180 }
+      ]
+    },
+    {
+      "channelId": "UC_B2e1trX0j2FgR3k8boT7Q",
+      "title": "Firebase",
+      "brand": "Google",
+      "thumbnailUrl": "https://yt3.googleusercontent.com/ytc/example2",
+      "subscribers": 780000,
+      "totalViews": 45000000,
+      "videoCount": 620,
+      "videos": [
+        { "videoId": "vid101", "title": "Firebase Crashlytics Deep Dive", "publishedAt": "2026-05-15", "durationSec": 1200, "views": 28000, "likes": 1800, "comments": 230 },
+        { "videoId": "vid102", "title": "Serverless with Firebase Genkit", "publishedAt": "2026-06-02", "durationSec": 45, "views": 15000, "likes": 1100, "comments": 95 },
+        { "videoId": "vid103", "title": "Firebase Authentication Best Practices", "publishedAt": "2026-06-07", "durationSec": 720, "views": 22000, "likes": 1500, "comments": 310 }
+      ]
+    },
+    {
+      "channelId": "UCVHFbqXqoYvEWM1Ddxl0QDg",
+      "title": "Android Developers",
+      "brand": "Google",
+      "thumbnailUrl": "https://yt3.googleusercontent.com/ytc/example3",
+      "subscribers": 1200000,
+      "totalViews": 98000000,
+      "videoCount": 950,
+      "videos": [
+        { "videoId": "vid201", "title": "Modern Android Development 2026", "publishedAt": "2026-05-25", "durationSec": 1800, "views": 65000, "likes": 4800, "comments": 620 },
+        { "videoId": "vid202", "title": "Compose UI Tips and Tricks", "publishedAt": "2026-06-03", "durationSec": 50, "views": 42000, "likes": 3100, "comments": 280 },
+        { "videoId": "vid203", "title": "Android 17 New Features", "publishedAt": "2026-06-09", "durationSec": 600, "views": 98000, "likes": 7200, "comments": 1100 }
+      ]
+    },
+    {
+      "channelId": "UC0rYZc0Vx4i_FUo3T9BqPQ",
+      "title": "Flutter",
+      "brand": "Google",
+      "thumbnailUrl": "https://yt3.googleusercontent.com/ytc/example4",
+      "subscribers": 650000,
+      "totalViews": 35000000,
+      "videoCount": 480,
+      "videos": [
+        { "videoId": "vid301", "title": "Flutter Widget of the Week", "publishedAt": "2026-05-30", "durationSec": 60, "views": 18000, "likes": 1400, "comments": 120 },
+        { "videoId": "vid302", "title": "Building Cross-Platform Apps", "publishedAt": "2026-06-04", "durationSec": 1500, "views": 32000, "likes": 2500, "comments": 380 },
+        { "videoId": "vid303", "title": "Dart 4.0 What's New", "publishedAt": "2026-06-10", "durationSec": 30, "views": 12000, "likes": 950, "comments": 85 }
+      ]
+    },
+    {
+      "channelId": "UCwXdF-m3CimBy1vRM8Wb12Q",
+      "title": "Google Cloud Tech",
+      "brand": "Google",
+      "thumbnailUrl": "https://yt3.googleusercontent.com/ytc/example5",
+      "subscribers": 920000,
+      "totalViews": 72000000,
+      "videoCount": 2100,
+      "videos": [
+        { "videoId": "vid401", "title": "Vertex AI Agent Builder", "publishedAt": "2026-05-28", "durationSec": 2400, "views": 55000, "likes": 3800, "comments": 520 },
+        { "videoId": "vid402", "title": "Cloud Run Tips", "publishedAt": "2026-06-06", "durationSec": 40, "views": 25000, "likes": 1900, "comments": 150 },
+        { "videoId": "vid403", "title": "Scaling with Google Kubernetes Engine", "publishedAt": "2026-06-11", "durationSec": 960, "views": 41000, "likes": 2900, "comments": 410 }
+      ]
+    }
+  ],
+  "snapshots": {
+    "UC_x5XG1OV2P6uZZ5FSM9Ttw": [
+      { "date": "2026-06-05", "subscribers": 2820000, "totalViews": 282000000, "videoCount": 1845 },
+      { "date": "2026-06-06", "subscribers": 2825000, "totalViews": 282500000, "videoCount": 1846 },
+      { "date": "2026-06-07", "subscribers": 2830000, "totalViews": 283200000, "videoCount": 1847 },
+      { "date": "2026-06-08", "subscribers": 2838000, "totalViews": 284000000, "videoCount": 1848 },
+      { "date": "2026-06-09", "subscribers": 2842000, "totalViews": 284500000, "videoCount": 1849 },
+      { "date": "2026-06-10", "subscribers": 2848000, "totalViews": 284800000, "videoCount": 1850 },
+      { "date": "2026-06-11", "subscribers": 2850000, "totalViews": 285000000, "videoCount": 1850 }
+    ],
+    "UC_B2e1trX0j2FgR3k8boT7Q": [
+      { "date": "2026-06-05", "subscribers": 770000, "totalViews": 44000000, "videoCount": 618 },
+      { "date": "2026-06-06", "subscribers": 772000, "totalViews": 44200000, "videoCount": 619 },
+      { "date": "2026-06-07", "subscribers": 774000, "totalViews": 44400000, "videoCount": 619 },
+      { "date": "2026-06-08", "subscribers": 776000, "totalViews": 44600000, "videoCount": 620 },
+      { "date": "2026-06-09", "subscribers": 777000, "totalViews": 44800000, "videoCount": 620 },
+      { "date": "2026-06-10", "subscribers": 779000, "totalViews": 44900000, "videoCount": 620 },
+      { "date": "2026-06-11", "subscribers": 780000, "totalViews": 45000000, "videoCount": 620 }
+    ],
+    "UCVHFbqXqoYvEWM1Ddxl0QDg": [
+      { "date": "2026-06-05", "subscribers": 1190000, "totalViews": 97000000, "videoCount": 947 },
+      { "date": "2026-06-06", "subscribers": 1193000, "totalViews": 97200000, "videoCount": 948 },
+      { "date": "2026-06-07", "subscribers": 1195000, "totalViews": 97400000, "videoCount": 948 },
+      { "date": "2026-06-08", "subscribers": 1197000, "totalViews": 97600000, "videoCount": 949 },
+      { "date": "2026-06-09", "subscribers": 1199000, "totalViews": 97800000, "videoCount": 949 },
+      { "date": "2026-06-10", "subscribers": 1200000, "totalViews": 98000000, "videoCount": 950 },
+      { "date": "2026-06-11", "subscribers": 1200000, "totalViews": 98000000, "videoCount": 950 }
+    ],
+    "UC0rYZc0Vx4i_FUo3T9BqPQ": [
+      { "date": "2026-06-05", "subscribers": 640000, "totalViews": 34000000, "videoCount": 476 },
+      { "date": "2026-06-06", "subscribers": 642000, "totalViews": 34200000, "videoCount": 477 },
+      { "date": "2026-06-07", "subscribers": 644000, "totalViews": 34400000, "videoCount": 478 },
+      { "date": "2026-06-08", "subscribers": 646000, "totalViews": 34600000, "videoCount": 478 },
+      { "date": "2026-06-09", "subscribers": 647000, "totalViews": 34800000, "videoCount": 479 },
+      { "date": "2026-06-10", "subscribers": 649000, "totalViews": 34900000, "videoCount": 480 },
+      { "date": "2026-06-11", "subscribers": 650000, "totalViews": 35000000, "videoCount": 480 }
+    ],
+    "UCwXdF-m3CimBy1vRM8Wb12Q": [
+      { "date": "2026-06-05", "subscribers": 910000, "totalViews": 71000000, "videoCount": 2095 },
+      { "date": "2026-06-06", "subscribers": 912000, "totalViews": 71200000, "videoCount": 2096 },
+      { "date": "2026-06-07", "subscribers": 914000, "totalViews": 71400000, "videoCount": 2097 },
+      { "date": "2026-06-08", "subscribers": 916000, "totalViews": 71600000, "videoCount": 2098 },
+      { "date": "2026-06-09", "subscribers": 917000, "totalViews": 71800000, "videoCount": 2099 },
+      { "date": "2026-06-10", "subscribers": 919000, "totalViews": 71900000, "videoCount": 2100 },
+      { "date": "2026-06-11", "subscribers": 920000, "totalViews": 72000000, "videoCount": 2100 }
+    ]
+  }
+}

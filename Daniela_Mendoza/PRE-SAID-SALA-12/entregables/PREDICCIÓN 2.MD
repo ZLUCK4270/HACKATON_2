@@ -1,0 +1,2 @@
+Mesas tiene un enum de estados y un campo único (numero). ¿Qué archivos extra crees que la IA creará que NO creó para Platos? ¿Creará un archivo para el enum?
+Creo que la IA creará un archivo extra para el enum de estados, DTOs adicionales para validar estados y posiblemente un DTO específico para cambiar estado, porque Platos no necesitaba enum ni validaciones especiales.

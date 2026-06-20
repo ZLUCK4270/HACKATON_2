@@ -1,0 +1,74 @@
+R1 — ¿La entidad tiene EXACTAMENTE los campos pedidos?
+Hallazgo: Sí, tiene id, numero, capacidad, estado, createdAt y updatedAt.
+
+R2 — ¿El enum de estados existe? ¿Tiene los 3 valores?
+Hallazgo: Sí, existe mesa-estado.enum.ts con disponible, ocupada y reservada.
+
+R3 — ¿El campo numero tiene restricción de unicidad?
+Hallazgo: Sí, usa @Column({ unique: true }).
+
+R4 — ¿El servicio tiene cambiarEstado además del CRUD?
+Hallazgo: Sí, tiene CRUD completo y método cambiarEstado(id, nuevoEstado).
+
+R5 — ¿El controlador expone PATCH /mesas/:id/estado?
+Hallazgo: Sí, el endpoint existe y apareció registrado en los logs.
+
+R6 — ¿Los DTOs validan que estado solo acepte valores del enum?
+Hallazgo: Sí, utilizan validación basada en el enum.
+
+R7 — ¿La IA modificó archivos que NO le pedimos? ¿Cuáles?
+Hallazgo: Modificó app.module.ts y agregó Mesa a TypeORM. Fue necesario para registrar la entidad y módulo.
+
+R8 — ¿Hay algo que ninguno de los dos entiende?
+Hallazgo: Revisar PartialType, validación de unicidad en el servicio o manejo de enums si todavía genera dudas.
+
+Lo que la IA hizo BIEN:
+
+Siguió el patrón del módulo Platos. La estructura (entity, service, controller, module y DTOs) quedó consistente con el diseño existente del proyecto.
+Implementó validaciones con class-validator. Los DTOs validan los datos de entrada antes de llegar a la lógica de negocio.
+Utilizó PartialType para actualización. Esto evita duplicar definiciones entre DTOs de creación y actualización.
+Implementó validación de número único. Se contempló la regla de negocio de que no existan dos mesas con el mismo número.
+Creó el endpoint específico para cambio de estado. Separar PATCH /mesas/:id/estado del PATCH /mesas/:id mejora la claridad de la API.
+Registró la entidad en TypeORM y el módulo en AppModule. Sin este paso la tabla no se habría generado ni la funcionalidad habría estado disponible.
+
+Lo que la IA hizo MAL:
+
+No anticipó el problema de evidencia de merge para la evaluación.
+Qué era: La integración inicial de feature/mesas se realizó mediante fast-forward.
+Por qué está mal: El historial no mostraba un commit de merge visible, dificultando demostrar el uso de ramas.
+Cómo se corrigió: Se recreó la rama, se agregó un commit adicional, se abrió un Pull Request y se realizó un merge formal en GitHub.
+No verificó automáticamente la configuración completa de TypeORM.
+Qué era: Asumió que registrar la entidad en entities era suficiente.
+Por qué está mal: Dependiendo de la configuración (autoLoadEntities o entities explícito), el comportamiento puede variar.
+Cómo se corrigió: Se revisó la configuración real del proyecto y se confirmó que la entidad estaba registrada correctamente.
+No realizó pruebas automáticas del módulo.
+Qué era: La generación se centró en el código y no en validaciones de ejecución.
+Por qué está mal: El código puede compilar pero contener errores funcionales.
+Cómo se corrigió: Se verificó manualmente mediante revisión y pruebas de integración.
+
+Lo que la IA INVENTÓ (no pedimos):
+
+La recomendación de usar autoLoadEntities: true.
+¿Era necesario? No. El proyecto funcionaba registrando explícitamente las entidades.
+Comandos adicionales para inspeccionar el historial Git (git show, git branch --contains, etc.).
+¿Era necesario? No para implementar Mesas, aunque fueron útiles para diagnosticar el problema de la rama.
+Sugerencias de documentación y comentarios internos.
+¿Era necesario? No para la funcionalidad principal, pero mejoran la mantenibilidad.
+
+Predicción vs Realidad:
+
+Predicción de la IA	Lo que ocurrió realmente
+El módulo Mesas podría implementarse reutilizando el patrón de Platos.	Se implementó correctamente siguiendo la misma arquitectura.
+La validación de número único evitaría duplicados.	La lógica quedó incorporada en creación y actualización.
+Registrar la entidad permitiría que TypeORM gestione la tabla.	La entidad fue registrada correctamente y el módulo quedó integrado.
+El historial Git demostraría fácilmente la integración.	Fue necesario crear un Pull Request adicional para generar un merge visible en el historial.
+La rama eliminada podía recuperarse con git reflog.	La rama fue recuperada exitosamente desde el commit ae1903a.
+
+Comparación: Platos (Día 1) vs Mesas (Día 2)
+
+La estructura generada fue consistente en ambos módulos. Mesas reutilizó correctamente el patrón arquitectónico de Platos.
+La revisión del Día 2 fue más exhaustiva. Además de revisar el código, se revisó el flujo Git completo (rama, recuperación, PR y merge).
+La calidad de la evidencia mejoró. En Mesas se verificó explícitamente la existencia de la rama, sus commits y su integración mediante Pull Request.
+Se detectó un posible riesgo que también podría existir en Platos. Si Platos fue aceptado sin revisar exhaustivamente validaciones, podría tener problemas similares relacionados con reglas de negocio o casos límite que no fueron probados.
+Mesas dejó una lección sobre Git. No basta con que el código funcione; también es importante que el historial refleje correctamente el proceso de desarrollo cuando la evaluación exige evidencia de ramas y merges.
+La revisión aumentó la confianza en el resultado final. Se validó tanto la implementación técnica como la trazabilidad del trabajo realizado.

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* =============================================
+   TOKENS DE DISEÑO — DARK MODE PREMIUM
+   ============================================= */
+:root {
+  --bg-base:       #0d0d0d;
+  --bg-surface:    #161616;
+  --bg-card:       #1c1c1e;
+  --bg-card-hover: #232325;
+  --bg-input:      #1a1a1c;
+
+  --border:        rgba(255,255,255,0.07);
+  --border-hover:  rgba(255,255,255,0.15);
+
+  --gold:          #f59e0b;
+  --gold-light:    #fbbf24;
+  --gold-dark:     #d97706;
+  --gold-glow:     rgba(245,158,11,0.25);
+
+  --green:         #10b981;
+  --green-light:   #34d399;
+  --green-glow:    rgba(16,185,129,0.2);
+
+  --red:           #ef4444;
+  --red-light:     #f87171;
+  --red-glow:      rgba(239,68,68,0.2);
+
+  --blue:          #3b82f6;
+  --blue-light:    #60a5fa;
+  --blue-glow:     rgba(59,130,246,0.2);
+
+  --yellow:        #eab308;
+  --yellow-glow:   rgba(234,179,8,0.2);
+
+  --text-primary:   #f5f5f5;
+  --text-secondary: #a1a1aa;
+  --text-muted:     #52525b;
+
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-glow-gold: 0 0 20px rgba(245,158,11,0.15);
+}
+
+/* =============================================
+   BASE
+   ============================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* =============================================
+   SCROLLBAR PREMIUM
+   ============================================= */
+::-webkit-scrollbar        { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: var(--bg-base); }
+::-webkit-scrollbar-thumb  { background: #3a3a3c; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-dark); }
+
+/* =============================================
+   ANIMACIONES
+   ============================================= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+@keyframes spinGold {
+  to { transform: rotate(360deg); }
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 8px var(--gold-glow); }
+  50%       { box-shadow: 0 0 20px var(--gold-glow); }
+}
+
+.animate-fade-in    { animation: fadeIn   0.35s ease both; }
+.animate-slide-down { animation: slideDown 0.3s ease both; }
+.animate-slide-up   { animation: slideUp   0.3s ease both; }
+.animate-slide-right{ animation: slideRight 0.3s ease both; }
+.animate-zoom-in    { animation: zoomIn   0.25s ease both; }
+.animate-pulse-slow { animation: pulse    2.5s ease infinite; }
+
+/* Compatibilidad con clases antiguas */
+.animate-in { animation: fadeIn 0.35s ease both; }
+.fade-in    { animation: fadeIn 0.35s ease both; }
+.slide-in-from-top-2    { animation: slideDown  0.3s ease both; }
+.slide-in-from-right-4  { animation: slideRight 0.3s ease both; }
+.slide-in-from-bottom-2 { animation: slideUp    0.3s ease both; }
+.zoom-in-95             { animation: zoomIn     0.25s ease both; }
+
+/* =============================================
+   SKELETON SHIMMER
+   ============================================= */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-card) 25%,
+    #2a2a2c 50%,
+    var(--bg-card) 75%
+  );
+  background-size: 400px 100%;
+  animation: shimmer 1.4s ease infinite;
+  border-radius: var(--radius-md);
+}
+
+/* =============================================
+   COMPONENTES GLOBALES
+   ============================================= */
+
+/* --- Cards --- */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-card), var(--shadow-glow-gold);
+  transform: translateY(-2px);
+}
+
+/* --- Inputs & Selects --- */
+input, select, textarea {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 10px 14px !important;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none !important;
+  width: 100%;
+}
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 3px var(--gold-glow) !important;
+}
+select option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+/* --- Buttons base --- */
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* --- Tabla --- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+thead {
+  background: rgba(255,255,255,0.03);
+}
+th {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+tbody tr {
+  transition: background 0.15s;
+}
+tbody tr:hover {
+  background: rgba(255,255,255,0.03);
+}
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- Badges / Pills --- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+/* =============================================
+   PRINT
+   ============================================= */
+@media print {
+  .no-print { display: none; }
+  body { background: white; color: black; }
+}

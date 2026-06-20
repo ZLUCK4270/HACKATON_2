@@ -1,0 +1,22 @@
+#	Qué revisar	Estado	Comentario
+
+F1	¿Las páginas hacen fetch a http://localhost:3000?		
+En Dashboard, Platos, Mesas y Pedidos estás usando fetch al backend NestJS en el puerto 3000.
+
+F2	¿Si el backend no responde, muestra mensaje de error?	
+En todas las páginas tienes catch()y muestras "No se pudo conectar con el backend".
+
+F3	¿La navegación funciona entre todas las páginas?
+	En el Dashboard tienes enlaces a /platos, /mesasy /pedidosmediante Linkde Next.js.
+
+F4	¿El formulario de crear plato realmente crea un plato en el backend?
+Tu función crearPlato()hace POST a /platosy luego recarga la lista.
+
+F5	¿El cambio de estado de mesa se refleja sin refrescar la página?
+Después de ejecutar PATCH await cargarMesas(), actualizando la interfaz automáticamente.
+
+F6	¿La IA creó componentes reutilizables o repitió código?
+	Hay repetición. Cada página tiene su propio fetch, manejo de errores y estilos. No hay componentes reutilizables como Card, Navbar, ErrorMessage, etc.
+
+F7	¿Los estilos Tailwind se ven coherentes entre páginas?
+Ya unificaste el diseño negro + crema/beige para Dashboard, Platos, Mesas y Pedidos.

@@ -1,0 +1,35 @@
+# Compilación
+/dist
+/artifacts
+/build
+
+# Dependencias
+/node_modules
+/restaurante-backend/node_modules
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Editor y Sistema
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+Thumbs.db
+
+# Cobertura de tests
+/coverage
+/test-results
+
+# NestJS específico
+/restaurante-backend/dist

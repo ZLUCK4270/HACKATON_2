@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RPSoft Dashboard — Monitoreo unificado de redes sociales con analítica avanzada">
+  <meta name="theme-color" content="#5b3ef5">
+  <link rel="icon" type="image/x-icon" href="logo-rpsoft.ico" sizes="64x64">
+  <title>RPSoft Social Media Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-layout">
+
+    <!-- Sidebar overlay for mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="sidebar-logo">
+          <img src="RP-soft.png" alt="RPSoft" style="width:46px;height:46px;border-radius:12px;object-fit:cover;">
+        </div>
+        <span class="sidebar-brand-text">RPSoft</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-view="dashboard" onclick="navigateTo('dashboard')">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/>
+            <rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>
+          </svg>
+          <span>Dashboard</span>
+        </a>
+
+        <div class="nav-section-label">Redes Sociales</div>
+
+        <!-- YouTube -->
+        <a href="#" class="nav-item" data-view="youtube" onclick="navigateTo('youtube')">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          <span>YouTube</span>
+        </a>
+
+        <!-- TikTok -->
+        <a href="#" class="nav-item" data-view="tiktok" onclick="navigateTo('tiktok')">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.69a8.27 8.27 0 0 0 4.83 1.54V7.78a4.85 4.85 0 0 1-1.06-.09z"/>
+          </svg>
+          <span>TikTok</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="#" class="nav-item" data-view="instagram" onclick="navigateTo('instagram')">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+          </svg>
+          <span>Instagram</span>
+        </a>
+
+        <!-- Facebook -->
+        <a href="#" class="nav-item" data-view="facebook" onclick="navigateTo('facebook')">
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          <span>Facebook</span>
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- TOP HEADER -->
+      <header class="top-header">
+        <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle sidebar">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <div class="top-header-left">
+          <h2 id="pageTitle">Dashboard Principal</h2>
+        </div>
+        <div class="top-header-right">
+          <span id="dataSource" class="data-source">
+            <span id="sourceDot" class="data-source-dot loading"></span>
+            <span id="sourceLabel">Conectando...</span>
+          </span>
+          <span id="lastUpdate" class="last-update"></span>
+        </div>
+      </header>
+
+      <div class="content-area">
+
+        <!-- ===== DASHBOARD VIEW ===== -->
+        <div class="view active" id="view-dashboard">
+
+          <!-- Controls -->
+          <section class="controls">
+            <div class="control-group">
+              <label for="periodSelect">Periodo:</label>
+              <select id="periodSelect">
+                <option value="week" selected>Última semana</option>
+                <option value="month">Último mes</option>
+                <option value="all">Todo</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label for="brandSelect">Marca:</label>
+              <select id="brandSelect">
+                <option value="">Todas las marcas</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label for="thresholdInput">Umbral estancamiento (%):</label>
+              <input type="number" id="thresholdInput" value="0.5" step="0.1" min="0" max="10">
+            </div>
+            <div class="control-actions">
+              <button class="btn btn-primary" onclick="fetchData()">Actualizar datos</button>
+              <button class="btn btn-secondary" onclick="fetchFromApi()">Jalar datos ahora</button>
+            </div>
+          </section>
+
+          <div id="statusMessage" class="status-message" style="display:none"></div>
+
+          <!-- KPI Cards -->
+          <section class="kpi-grid" id="kpiGrid">
+            <div class="kpi-card">
+              <div class="kpi-icon kpi-icon-channels">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="kpi-label">Canales YouTube</div>
+              <div class="kpi-value" id="kpiChannels">-</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-icon kpi-icon-subs">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="kpi-label">Comunidad total (todas las redes)</div>
+              <div class="kpi-value" id="kpiTotalSubs">-</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-icon kpi-icon-stagnant">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div class="kpi-label">Canales estancados</div>
+              <div class="kpi-value" id="kpiStagnant">-</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-icon kpi-icon-engagement">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+              <div class="kpi-label">Engagement promedio (YT)</div>
+              <div class="kpi-value" id="kpiAvgEngagement">-</div>
+            </div>
+          </section>
+
+          <!-- Multi-Red Summary -->
+          <section class="card">
+            <div class="card-header">
+              <h2>Vista unificada — Todas las redes</h2>
+              <span class="badge" style="background:linear-gradient(135deg,#5b3ef5,#e1306c,#1877f2);color:white;">Multi-Red</span>
+            </div>
+            <div id="multiNetworkSummary" class="multi-network-grid">
+              <p class="text-center text-muted" style="padding:24px;grid-column:1/-1">Cargando redes...</p>
+            </div>
+          </section>
+
+          <!-- Channel Summary Cards -->
+          <section class="card">
+            <div class="card-header">
+              <h2>Resumen de canales</h2>
+              <span class="badge badge-youtube" id="dashChannelCount">Cargando...</span>
+            </div>
+            <div id="dashChannelCards" class="dash-channel-grid">
+              <p class="text-center text-muted" style="padding:24px;grid-column:1/-1">Cargando canales...</p>
+            </div>
+          </section>
+
+          <section class="card"><div class="card-header"><h2>¿Qué canal está creciendo más rápido?</h2><span class="badge badge-growth">Tasa de crecimiento %</span></div><div class="table-responsive"><table class="table" id="growthTable"><thead><tr><th>#</th><th>Canal</th><th>Marca</th><th>Suscriptores (inicio)</th><th>Suscriptores (fin)</th><th>Crecimiento neto</th><th>Tasa de crecimiento</th></tr></thead><tbody id="growthTableBody"><tr><td colspan="7" class="text-center">Cargando...</td></tr></tbody></table></div></section>
+
+          <section class="card"><div class="card-header"><h2>¿Cuál fue el video más exitoso?</h2><span class="badge badge-video">Por interacciones</span></div><div class="table-responsive"><table class="table" id="topVideosTable"><thead><tr><th>#</th><th>Video</th><th>Canal</th><th>Vistas</th><th>Likes</th><th>Comentarios</th><th>Interacciones</th><th>Engagement</th><th>Tipo</th></tr></thead><tbody id="topVideosBody"><tr><td colspan="9" class="text-center">Cargando...</td></tr></tbody></table></div></section>
+
+          <section class="card"><div class="card-header"><h2>¿Shorts o videos largos generan más interacción?</h2><span class="badge badge-type">Comparativa</span></div><div class="content-type-grid" id="contentTypeGrid"><div class="text-center" style="grid-column: 1 / -1;">Cargando...</div></div></section>
+
+          <section class="card"><div class="card-header"><h2>Señales de estancamiento</h2><span class="badge badge-alert">Umbral configurable</span></div><div id="stagnantContent"><p class="text-center text-muted">Cargando...</p></div></section>
+
+          <section class="card"><div class="card-header"><h2>Evolución de la comunidad</h2><span class="badge badge-chart">Serie temporal</span></div><div class="chart-container"><canvas id="timelineChart"></canvas></div></section>
+
+          <section class="card"><div class="card-header"><h2>Tendencias identificadas</h2><span class="badge badge-trend">Snapshots acumulados</span></div><div id="trendsContent"><p class="text-center text-muted">Cargando...</p></div></section>
+        </div>
+
+        <!-- ===== YOUTUBE VIEW ===== -->
+        <div class="view" id="view-youtube">
+          <div class="social-hero youtube-hero">
+            <div class="social-hero-bg"></div>
+            <div class="social-hero-content">
+              <div class="social-hero-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </div>
+              <div>
+                <h2 class="social-hero-title">YouTube</h2>
+                <p class="social-hero-sub">Gestión de canales y búsqueda de videos</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- YouTube KPIs -->
+          <div class="yt-kpi-row" id="ytKpiRow">
+            <div class="yt-kpi"><span class="yt-kpi-val" id="ytKpiChannels">-</span><span class="yt-kpi-label">Canales</span></div>
+            <div class="yt-kpi"><span class="yt-kpi-val" id="ytKpiSubs">-</span><span class="yt-kpi-label">Suscriptores totales</span></div>
+            <div class="yt-kpi"><span class="yt-kpi-val" id="ytKpiVideos">-</span><span class="yt-kpi-label">Videos totales</span></div>
+            <div class="yt-kpi"><span class="yt-kpi-val" id="ytKpiTopGrowth">-</span><span class="yt-kpi-label">Mejor crecimiento</span></div>
+          </div>
+
+          <!-- YouTube Charts -->
+          <div class="yt-charts-row">
+            <div class="card" style="flex:2;min-width:0;">
+              <div class="card-header"><h2>Suscriptores por canal</h2><span class="badge badge-youtube">Datos actuales</span></div>
+              <div class="chart-container" style="height:280px"><canvas id="ytSubsChart"></canvas></div>
+            </div>
+            <div class="card" style="flex:1;min-width:0;">
+              <div class="card-header"><h2>Distribución por marca</h2><span class="badge badge-youtube">Marcas</span></div>
+              <div class="chart-container" style="height:280px"><canvas id="ytBrandChart"></canvas></div>
+            </div>
+          </div>
+
+          <!-- BREADCRUMB -->
+          <div class="yt-breadcrumb" id="ytBreadcrumb" style="display:none;">
+            <a href="#" onclick="showChannelsList()">Canales</a>
+            <span class="yt-breadcrumb-sep">›</span>
+            <span id="ytBreadcrumbCurrent"></span>
+          </div>
+
+          <!-- Channels List View -->
+          <div id="ytChannelsListView">
+            <div class="card">
+              <div class="card-header">
+                <h2>Agregar canal</h2>
+              </div>
+              <div class="card-body">
+                <div class="add-channel-form">
+                  <input type="text" id="channelUrlInput" placeholder="URL o ID del canal de YouTube" class="form-input">
+                  <input type="text" id="channelNameInput" placeholder="Nombre del canal" class="form-input">
+                  <input type="text" id="channelBrandInput" placeholder="Marca (ej: Google, Sony)" class="form-input">
+                  <button class="btn btn-primary" onclick="addChannel()">Agregar canal</button>
+                </div>
+                <p class="form-hint">Ej: https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw o solo el ID</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h2>Canales monitoreados</h2>
+                <span class="badge badge-youtube" id="channelCount">0 canales</span>
+              </div>
+              <div class="channel-grid" id="channelGrid">
+                <p class="text-center text-muted" style="padding:24px;">Cargando...</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h2>Buscar videos</h2>
+                <span class="badge badge-video">YouTube Search</span>
+              </div>
+              <div class="card-body">
+                <div class="search-bar">
+                  <input type="text" id="videoSearchInput" placeholder="Buscar videos por nombre..." class="form-input search-input">
+                  <button class="btn btn-primary" onclick="searchVideos()">Buscar</button>
+                </div>
+                <div id="videoSearchResults" class="channel-videos-grid" style="padding: 16px 0 0;"></div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h2>Videos guardados</h2>
+                <span class="badge badge-video" id="savedCount">0</span>
+              </div>
+              <div id="yt-saved-videos">
+                <p class="text-center text-muted" style="padding:24px;">No hay videos guardados aún.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Channel Detail View -->
+          <div id="ytChannelDetail" style="display:none;">
+            <div class="channel-detail-header" id="channelDetailHeader">
+              <img id="channelDetailThumb" class="channel-detail-avatar" src="" alt="">
+              <div class="channel-detail-info">
+                <h2 id="channelDetailTitle"></h2>
+                <p id="channelDetailDescription" class="channel-detail-desc"></p>
+                <div class="channel-detail-stats">
+                  <div class="channel-stat">
+                    <span class="channel-stat-value" id="channelDetailSubs">0</span>
+                    <span class="channel-stat-label">Suscriptores</span>
+                  </div>
+                  <div class="channel-stat">
+                    <span class="channel-stat-value" id="channelDetailVideos">0</span>
+                    <span class="channel-stat-label">Videos</span>
+                  </div>
+                  <div class="channel-stat">
+                    <span class="channel-stat-value" id="channelDetailBrand">-</span>
+                    <span class="channel-stat-label">Marca</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <h2>Videos del canal</h2>
+                <div class="channel-video-search">
+                  <input type="text" id="channelVideoSearch" placeholder="Buscar video por nombre..." class="form-input" style="min-width:200px;padding:6px 12px;font-size:0.8rem;" onkeyup="filterChannelVideos()">
+                </div>
+              </div>
+              <div id="channelVideosContainer">
+                <p class="text-center text-muted" style="padding:40px;">Cargando videos...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== TIKTOK VIEW ===== -->
+        <div class="view" id="view-tiktok">
+          <div class="social-hero tiktok-hero">
+            <div class="social-hero-bg"></div>
+            <div class="social-hero-content">
+              <div class="social-hero-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.69a8.27 8.27 0 0 0 4.83 1.54V7.78a4.85 4.85 0 0 1-1.06-.09z"/></svg>
+              </div>
+              <div>
+                <h2 class="social-hero-title">TikTok</h2>
+                <p class="social-hero-sub">Análisis de cuentas · Dataset de respaldo</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-kpi-grid">
+            <div class="social-kpi-card tt-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="ttKpiAccounts">-</span><span class="social-kpi-label">Cuentas</span></div>
+            </div>
+            <div class="social-kpi-card tt-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="ttKpiFollowers">-</span><span class="social-kpi-label">Seguidores</span></div>
+            </div>
+            <div class="social-kpi-card tt-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="ttKpiLikes">-</span><span class="social-kpi-label">Likes totales</span></div>
+            </div>
+            <div class="social-kpi-card tt-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="ttKpiGrowth">-</span><span class="social-kpi-label">Mayor crecimiento</span></div>
+            </div>
+          </div>
+          <div class="social-two-col">
+            <div class="card">
+              <div class="card-header"><h2>Seguidores por cuenta</h2><span class="badge tt-badge">Audiencia</span></div>
+              <div class="chart-container" style="height:260px"><canvas id="ttSubsChart"></canvas></div>
+            </div>
+            <div class="card">
+              <div class="card-header"><h2>Likes acumulados</h2><span class="badge tt-badge">Engagement</span></div>
+              <div class="chart-container" style="height:260px"><canvas id="ttLikesChart"></canvas></div>
+            </div>
+          </div>
+          <section class="card">
+            <div class="card-header"><h2>Top videos por interacciones</h2><span class="badge tt-badge">Videos virales</span></div>
+            <div id="ttTopVideos" class="social-posts-list"><p class="text-center text-muted" style="padding:24px;">Cargando...</p></div>
+          </section>
+          <section class="card">
+            <div class="card-header"><h2>Evolución de seguidores</h2><span class="badge tt-badge">Serie temporal</span></div>
+            <div class="chart-container"><canvas id="ttTimelineChart"></canvas></div>
+          </section>
+        </div>
+
+        <!-- ===== INSTAGRAM VIEW ===== -->
+        <div class="view" id="view-instagram">
+          <div class="social-hero instagram-hero">
+            <div class="social-hero-bg"></div>
+            <div class="social-hero-content">
+              <div class="social-hero-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </div>
+              <div>
+                <h2 class="social-hero-title">Instagram</h2>
+                <p class="social-hero-sub">Análisis de cuentas · Dataset de respaldo</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-kpi-grid">
+            <div class="social-kpi-card ig-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="igKpiAccounts">-</span><span class="social-kpi-label">Cuentas</span></div>
+            </div>
+            <div class="social-kpi-card ig-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="igKpiFollowers">-</span><span class="social-kpi-label">Seguidores</span></div>
+            </div>
+            <div class="social-kpi-card ig-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="igKpiGrowth">-</span><span class="social-kpi-label">Mayor crecimiento</span></div>
+            </div>
+            <div class="social-kpi-card ig-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="igKpiAvgLikes">-</span><span class="social-kpi-label">Avg. Likes / post</span></div>
+            </div>
+          </div>
+          <div class="social-two-col">
+            <div class="card">
+              <div class="card-header"><h2>Seguidores por cuenta</h2><span class="badge ig-badge">Audiencia</span></div>
+              <div class="chart-container" style="height:260px"><canvas id="igSubsChart"></canvas></div>
+            </div>
+            <div class="card">
+              <div class="card-header"><h2>Top posts por interacciones</h2><span class="badge ig-badge">Contenido</span></div>
+              <div id="igTopPosts" class="social-posts-list"><p class="text-center text-muted" style="padding:24px;">Cargando...</p></div>
+            </div>
+          </div>
+          <section class="card">
+            <div class="card-header"><h2>Evolución de seguidores</h2><span class="badge ig-badge">Serie temporal</span></div>
+            <div class="chart-container"><canvas id="igTimelineChart"></canvas></div>
+          </section>
+        </div>
+
+        <!-- ===== FACEBOOK VIEW ===== -->
+        <div class="view" id="view-facebook">
+          <div class="social-hero facebook-hero">
+            <div class="social-hero-bg"></div>
+            <div class="social-hero-content">
+              <div class="social-hero-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </div>
+              <div>
+                <h2 class="social-hero-title">Facebook</h2>
+                <p class="social-hero-sub">Páginas y Grupos · Dataset de respaldo</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-kpi-grid">
+            <div class="social-kpi-card fb-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="fbKpiPages">-</span><span class="social-kpi-label">Páginas</span></div>
+            </div>
+            <div class="social-kpi-card fb-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="fbKpiFollowers">-</span><span class="social-kpi-label">Seguidores</span></div>
+            </div>
+            <div class="social-kpi-card fb-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="fbKpiGroups">-</span><span class="social-kpi-label">Grupos</span></div>
+            </div>
+            <div class="social-kpi-card fb-kpi">
+              <div class="social-kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+              <div class="social-kpi-body"><span class="social-kpi-val" id="fbKpiGroupMembers">-</span><span class="social-kpi-label">Miembros en grupos</span></div>
+            </div>
+          </div>
+          <div class="social-two-col">
+            <div class="card">
+              <div class="card-header"><h2>Seguidores por página</h2><span class="badge fb-badge">Páginas</span></div>
+              <div class="chart-container" style="height:260px"><canvas id="fbSubsChart"></canvas></div>
+            </div>
+            <div class="card">
+              <div class="card-header"><h2>Miembros por grupo</h2><span class="badge fb-badge">Grupos</span></div>
+              <div class="chart-container" style="height:260px"><canvas id="fbGroupChart"></canvas></div>
+            </div>
+          </div>
+          <section class="card">
+            <div class="card-header"><h2>Top publicaciones</h2><span class="badge fb-badge">Por interacciones</span></div>
+            <div id="fbTopPosts" class="social-posts-list"><p class="text-center text-muted" style="padding:24px;">Cargando...</p></div>
+          </section>
+          <section class="card">
+            <div class="card-header"><h2>Registro manual — Grupos</h2><span class="badge fb-badge">Carga manual</span></div>
+            <div class="card-body">
+              <p class="social-hint">Los grupos de Facebook no tienen API pública. Ingresa el conteo de miembros manualmente para construir la serie temporal.</p>
+              <div class="add-channel-form" style="max-width:640px;">
+                <select id="fbGroupSelect" class="form-input" style="flex:2"><option value="">Selecciona un grupo...</option></select>
+                <input type="date" id="fbGroupDate" class="form-input" style="flex:1">
+                <input type="number" id="fbGroupMembers" placeholder="N° de miembros" class="form-input" style="flex:1" min="0">
+                <button class="btn btn-primary" onclick="addGroupSnapshot()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right:6px"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>Guardar</button>
+              </div>
+            </div>
+            <div id="fbGroupsTable" style="padding:0 20px 20px;"><p class="text-center text-muted">Cargando grupos...</p></div>
+          </section>
+          <section class="card">
+            <div class="card-header"><h2>Evolución de grupos — Miembros</h2><span class="badge fb-badge">Serie temporal</span></div>
+            <div class="chart-container"><canvas id="fbGroupTimelineChart"></canvas></div>
+          </section>
+        </div>
+
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p>
+            <span style="background: linear-gradient(135deg,#5b3ef5,#8b5cf6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:700;">RPSoft</span>
+            &nbsp;Bootcamp · Hackathon v2 &nbsp;·&nbsp; Dashboard Unificado de Redes Sociales
+          </p>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
