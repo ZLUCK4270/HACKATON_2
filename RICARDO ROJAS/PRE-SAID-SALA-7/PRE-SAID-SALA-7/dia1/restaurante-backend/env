@@ -1,0 +1,6 @@
+# Puerto del servidor (por defecto 3001)
+PORT=3001
+
+# Base de datos: PostgreSQL (producción) o SQLite (desarrollo local)
+# Si DATABASE_URL no está definida, se usa SQLite automáticamente
+# DATABASE_URL=postgresql://usuario:password@host:5432/nombre_db

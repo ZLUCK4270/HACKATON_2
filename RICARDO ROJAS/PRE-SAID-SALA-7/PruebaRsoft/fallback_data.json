@@ -1,0 +1,28 @@
+{
+  "fallbackData": {
+    "channelId": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+    "channelName": "Google Developers fallback",
+    "subscribers": 5500000,
+    "totalViews": 100000000,
+    "videos": [
+      {
+        "id": "abc123fallback",
+        "title": "Fallback Video Example 1",
+        "duration": "PT5M30S",
+        "views": 50000,
+        "likes": 2500,
+        "comments": 300,
+        "publishedAt": "2024-01-01T00:00:00Z"
+      },
+      {
+        "id": "def456fallback",
+        "title": "Fallback Short Example",
+        "duration": "PT30S",
+        "views": 150000,
+        "likes": 9000,
+        "comments": 450,
+        "publishedAt": "2024-01-02T00:00:00Z"
+      }
+    ]
+  }
+}
