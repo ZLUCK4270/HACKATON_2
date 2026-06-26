@@ -3,44 +3,50 @@ const defaultProjects = [
         id: 'alexander',
         name: 'Alexander Cardenas',
         icon: 'fa-user-astronaut',
-        description: 'Proyecto de Alexander'
+        description: 'Proyecto de Alexander',
+        url: 'https://restaurante-frontend-cbvmld7gk-zluck4270s-projects.vercel.app'
     },
     {
         id: 'daniela',
         name: 'Daniela Mendoza',
         icon: 'fa-user-ninja',
-        description: 'Proyecto de Daniela'
+        description: 'Proyecto de Daniela',
+        url: 'https://restaurante-frontend-ai7e7s3oa-zluck4270s-projects.vercel.app'
     },
     {
         id: 'luis',
         name: 'Luis Cajacuri',
         icon: 'fa-user-secret',
-        description: 'Proyecto de Luis'
+        description: 'Proyecto de Luis',
+        url: 'https://frontend-olh7i8o56-zluck4270s-projects.vercel.app'
     },
     {
         id: 'moreno',
         name: 'Orlando Moreno',
         icon: 'fa-user-tie',
-        description: 'Proyecto de Moreno'
+        description: 'Proyecto de Moreno',
+        url: 'https://restaurante-frontend-dr3ph828p-zluck4270s-projects.vercel.app'
     },
     {
         id: 'ricardo',
         name: 'Ricardo Rojas',
         icon: 'fa-user-graduate',
-        description: 'Proyecto de Ricardo'
+        description: 'Proyecto de Ricardo',
+        url: 'https://restaurante-frontend-oe55fci3z-zluck4270s-projects.vercel.app'
     },
     {
         id: 'valentino',
         name: 'Valentino Cuenca',
         icon: 'fa-user-shield',
-        description: 'Proyecto de Valentino'
+        description: 'Proyecto de Valentino',
+        url: 'https://restaurante-frontend-cur0j7fqu-zluck4270s-projects.vercel.app'
     }
 ];
 
-// Initialize projects with URLs from localStorage if available
+// Initialize projects with URLs from localStorage if available (allows overriding defaults)
 let projects = defaultProjects.map(p => {
     const savedUrl = localStorage.getItem(`url_${p.id}`);
-    return { ...p, url: savedUrl || '' };
+    return { ...p, url: savedUrl || p.url || '' };
 });
 
 let activeProjectId = null;
