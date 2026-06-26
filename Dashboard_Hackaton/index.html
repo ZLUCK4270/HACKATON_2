@@ -7,7 +7,6 @@
     <meta name="description" content="Dashboard para visualizar los trabajos de la Hackaton">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -42,9 +41,6 @@
                     <button id="edit-url-btn" class="btn btn-outline" style="display: none; margin-right: 10px;">
                         <i class="fa-solid fa-pen"></i> Editar URL
                     </button>
-                    <a href="#" id="external-link" target="_blank" class="btn btn-outline" style="display: none;">
-                        <i class="fa-solid fa-external-link-alt"></i> Abrir en Vercel
-                    </a>
                 </div>
             </header>
 
@@ -55,7 +51,7 @@
                         <i class="fa-solid fa-code"></i>
                     </div>
                     <h3>Bienvenido al Dashboard</h3>
-                    <p>Selecciona a un participante en el menú lateral para ver su proyecto desplegado.</p>
+                    <p>Selecciona a un participante en el menú lateral para explorar su proyecto.</p>
                 </div>
                 
                 <!-- Setup State (No URL defined) -->
@@ -64,15 +60,26 @@
                         <i class="fa-solid fa-link"></i>
                     </div>
                     <h3>Proyecto no configurado</h3>
-                    <p>Pega aquí el enlace de Vercel del compañero para visualizarlo. Esto se guardará en tu navegador.</p>
+                    <p>Pega aquí el enlace de Vercel para configurarlo.</p>
                     <div class="url-form">
                         <input type="url" id="vercel-url-input" placeholder="https://ejemplo.vercel.app" class="url-input">
                         <button id="save-url-btn" class="btn btn-primary">Guardar URL</button>
                     </div>
                 </div>
 
-                <!-- Iframe -->
-                <iframe id="project-frame" src="" frameborder="0" allowfullscreen></iframe>
+                <!-- Launch State (Vercel Blocking Workaround) -->
+                <div class="launch-state hidden" id="launch-state">
+                    <div class="icon-glow" style="box-shadow: 0 0 30px rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.4);">
+                        <i class="fa-solid fa-rocket" style="color: #10b981;"></i>
+                    </div>
+                    <h3 id="launch-title">Proyecto Listo</h3>
+                    <p>Vercel protege esta página contra iframes por seguridad. Haz clic abajo para abrir el proyecto completo en una nueva pestaña.</p>
+                    <div class="url-form" style="margin-top: 20px;">
+                        <a href="#" id="launch-link" target="_blank" class="btn btn-primary" style="display: inline-flex; justify-content: center; padding: 14px 28px; font-size: 16px;">
+                            <i class="fa-solid fa-external-link-alt"></i> Lanzar Proyecto
+                        </a>
+                    </div>
+                </div>
             </div>
         </main>
     </div>

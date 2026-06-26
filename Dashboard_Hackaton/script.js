@@ -43,7 +43,7 @@ const defaultProjects = [
     }
 ];
 
-// Initialize projects with URLs from localStorage if available (allows overriding defaults)
+// Initialize projects with URLs from localStorage if available
 let projects = defaultProjects.map(p => {
     const savedUrl = localStorage.getItem(`url_${p.id}`);
     return { ...p, url: savedUrl || p.url || '' };
@@ -53,14 +53,17 @@ let activeProjectId = null;
 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinksContainer = document.getElementById('nav-links');
-    const iframe = document.getElementById('project-frame');
     const emptyState = document.getElementById('empty-state');
     const setupState = document.getElementById('setup-state');
+    const launchState = document.getElementById('launch-state');
+    
     const title = document.getElementById('current-project-title');
-    const externalLink = document.getElementById('external-link');
     const editUrlBtn = document.getElementById('edit-url-btn');
     const urlInput = document.getElementById('vercel-url-input');
     const saveUrlBtn = document.getElementById('save-url-btn');
+    
+    const launchLink = document.getElementById('launch-link');
+    const launchTitle = document.getElementById('launch-title');
 
     function renderSidebar() {
         navLinksContainer.innerHTML = '';
@@ -94,19 +97,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (project.url.trim() === '') {
             // Show setup form
-            iframe.classList.remove('active');
+            launchState.classList.add('hidden');
             setupState.classList.remove('hidden');
-            externalLink.style.display = 'none';
             editUrlBtn.style.display = 'none';
             urlInput.value = '';
             setTimeout(() => urlInput.focus(), 100);
         } else {
-            // Show iframe
+            // Show Launch state instead of iframe
             setupState.classList.add('hidden');
-            iframe.src = project.url;
-            iframe.classList.add('active');
-            externalLink.href = project.url;
-            externalLink.style.display = 'flex';
+            launchState.classList.remove('hidden');
+            
+            launchTitle.textContent = `Lanzar Proyecto de ${project.name}`;
+            launchLink.href = project.url;
             editUrlBtn.style.display = 'flex';
         }
     }
@@ -115,23 +117,19 @@ document.addEventListener('DOMContentLoaded', () => {
     saveUrlBtn.addEventListener('click', () => {
         const url = urlInput.value.trim();
         if (url && activeProjectId) {
-            // Ensure valid URL format
             let finalUrl = url;
             if (!url.startsWith('http://') && !url.startsWith('https://')) {
                 finalUrl = 'https://' + url;
             }
             
-            // Save to array and local storage
             const projectIndex = projects.findIndex(p => p.id === activeProjectId);
             projects[projectIndex].url = finalUrl;
             localStorage.setItem(`url_${activeProjectId}`, finalUrl);
             
-            // Reload view
             selectProject(activeProjectId);
         }
     });
 
-    // Handle Enter key in input
     urlInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') saveUrlBtn.click();
     });
@@ -140,9 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
     editUrlBtn.addEventListener('click', () => {
         const project = projects.find(p => p.id === activeProjectId);
         if (project) {
-            iframe.classList.remove('active');
+            launchState.classList.add('hidden');
             setupState.classList.remove('hidden');
-            externalLink.style.display = 'none';
             editUrlBtn.style.display = 'none';
             urlInput.value = project.url;
             urlInput.focus();
